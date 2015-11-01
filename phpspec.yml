@@ -1,0 +1,5 @@
+suites:
+    main:
+        namespace: StardustApp
+        psr4_prefix: StardustApp
+        src_path: app
