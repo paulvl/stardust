@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Http;
+namespace StardustApi\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -13,11 +13,16 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         \Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
-        \StardustApp\Http\Middleware\EncryptCookies::class,
+        \StardustApi\Http\Middleware\EncryptCookies::class,
         \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-        \StardustApp\Http\Middleware\VerifyCsrfToken::class,
+
+        /*
+         * Packages middlewares...
+         */
+        
+        \LucaDegasperi\OAuth2Server\Middleware\OAuthExceptionHandlerMiddleware::class,
     ];
 
     /**
@@ -26,8 +31,18 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \StardustApp\Http\Middleware\Authenticate::class,
+        'csrf' => \StardustApi\Http\Middleware\VerifyCsrfToken::class,
+        'auth' => \StardustApi\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
-        'guest' => \StardustApp\Http\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \StardustApi\Http\Middleware\RedirectIfAuthenticated::class,
+
+        /*
+         * Packages route middlewares...
+         */
+
+        'oauth' => \LucaDegasperi\OAuth2Server\Middleware\OAuthMiddleware::class,
+        'oauth-user' => \LucaDegasperi\OAuth2Server\Middleware\OAuthUserOwnerMiddleware::class,
+        'oauth-client' => \LucaDegasperi\OAuth2Server\Middleware\OAuthClientOwnerMiddleware::class,
+        'check-authorization-params' => \LucaDegasperi\OAuth2Server\Middleware\CheckAuthCodeRequestMiddleware::class,
     ];
 }

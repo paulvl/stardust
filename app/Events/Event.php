@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Events;
+namespace StardustApi\Events;
 
 abstract class Event
 {

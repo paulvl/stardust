@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Providers;
+namespace StardustApi\Providers;
 
 use Illuminate\Contracts\Events\Dispatcher as DispatcherContract;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
@@ -13,8 +13,8 @@ class EventServiceProvider extends ServiceProvider
      * @var array
      */
     protected $listen = [
-        'StardustApp\Events\SomeEvent' => [
-            'StardustApp\Listeners\EventListener',
+        'StardustApi\Events\SomeEvent' => [
+            'StardustApi\Listeners\EventListener',
         ],
     ];
 

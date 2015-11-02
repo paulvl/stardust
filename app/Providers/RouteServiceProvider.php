@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Providers;
+namespace StardustApi\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
@@ -14,7 +14,7 @@ class RouteServiceProvider extends ServiceProvider
      *
      * @var string
      */
-    protected $namespace = 'StardustApp\Http\Controllers';
+    protected $namespace = 'StardustApi\Http\Controllers';
 
     /**
      * Define your route model bindings, pattern filters, etc.

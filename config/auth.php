@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'model' => StardustApp\User::class,
+    'model' => StardustApi\User::class,
 
     /*
     |--------------------------------------------------------------------------

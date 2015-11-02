@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Http\Controllers;
+namespace StardustApi\Http\Controllers;
 
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;

@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Http\Middleware;
+namespace StardustApi\Http\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as BaseEncrypter;
 

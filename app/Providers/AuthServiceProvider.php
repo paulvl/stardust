@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Providers;
+namespace StardustApi\Providers;
 
 use Illuminate\Contracts\Auth\Access\Gate as GateContract;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -13,7 +13,7 @@ class AuthServiceProvider extends ServiceProvider
      * @var array
      */
     protected $policies = [
-        'StardustApp\Model' => 'StardustApp\Policies\ModelPolicy',
+        'StardustApi\Model' => 'StardustApi\Policies\ModelPolicy',
     ];
 
     /**

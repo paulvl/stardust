@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Http\Middleware;
+namespace StardustApi\Http\Middleware;
 
 use Closure;
 use Illuminate\Contracts\Auth\Guard;

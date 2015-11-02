@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Http\Requests;
+namespace StardustApi\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Providers;
+namespace StardustApi\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

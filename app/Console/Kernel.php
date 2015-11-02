@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Console;
+namespace StardustApi\Console;
 
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
@@ -13,7 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-        \StardustApp\Console\Commands\Inspire::class,
+        \StardustApi\Console\Commands\Inspire::class,
     ];
 
     /**

@@ -30,7 +30,7 @@ return [
     ],
 
     'stripe' => [
-        'model'  => StardustApp\User::class,
+        'model'  => StardustApi\User::class,
         'key'    => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET'),
     ],

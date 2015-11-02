@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Jobs;
+namespace StardustApi\Jobs;
 
 use Illuminate\Bus\Queueable;
 

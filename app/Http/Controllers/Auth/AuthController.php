@@ -1,10 +1,10 @@
 <?php
 
-namespace StardustApp\Http\Controllers\Auth;
+namespace StardustApi\Http\Controllers\Auth;
 
-use StardustApp\User;
+use StardustApi\User;
 use Validator;
-use StardustApp\Http\Controllers\Controller;
+use StardustApi\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

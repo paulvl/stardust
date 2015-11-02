@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Http\Middleware;
+namespace StardustApi\Http\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as BaseVerifier;
 

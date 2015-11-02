@@ -1,6 +1,6 @@
 <?php
 
-namespace StardustApp\Exceptions;
+namespace StardustApi\Exceptions;
 
 use Exception;
 use Illuminate\Database\Eloquent\ModelNotFoundException;

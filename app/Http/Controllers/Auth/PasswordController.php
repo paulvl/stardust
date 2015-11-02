@@ -1,8 +1,8 @@
 <?php
 
-namespace StardustApp\Http\Controllers\Auth;
+namespace StardustApi\Http\Controllers\Auth;
 
-use StardustApp\Http\Controllers\Controller;
+use StardustApi\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ResetsPasswords;
 
 class PasswordController extends Controller

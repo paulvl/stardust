@@ -141,14 +141,16 @@ return [
          * Packages Service Providers...
          */
         Backup\BackupServiceProvider::class,
+        LucaDegasperi\OAuth2Server\Storage\FluentStorageServiceProvider::class,
+        LucaDegasperi\OAuth2Server\OAuth2ServerServiceProvider::class,
 
         /*
          * Application Service Providers...
          */
-        StardustApp\Providers\AppServiceProvider::class,
-        StardustApp\Providers\AuthServiceProvider::class,
-        StardustApp\Providers\EventServiceProvider::class,
-        StardustApp\Providers\RouteServiceProvider::class,
+        StardustApi\Providers\AppServiceProvider::class,
+        StardustApi\Providers\AuthServiceProvider::class,
+        StardustApi\Providers\EventServiceProvider::class,
+        StardustApi\Providers\RouteServiceProvider::class,
 
     ],
 
@@ -198,6 +200,12 @@ return [
         'URL'       => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View'      => Illuminate\Support\Facades\View::class,
+
+        /*
+         * Packages aliases...
+         */
+        
+        'Authorizer' => LucaDegasperi\OAuth2Server\Facades\Authorizer::class,
 
     ],
 
